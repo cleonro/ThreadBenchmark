@@ -10,8 +10,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #    controller.cpp
 #    )
 
-file(GLOB_RECURSE SourceFiles "*.cpp")
-file(GLOB_RECURSE HeaderFiles "*.h")
+file(GLOB_RECURSE SourceFiles "Cpp/*.cpp")
+file(GLOB_RECURSE HeaderFiles "Cpp/*.h")
 
 message("Source files: " ${SourceFiles})
 message("Header files: " ${HeaderFiles})
