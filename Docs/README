@@ -1,0 +1,16 @@
+Pyhton scripts for local tests need the following environment variables
+    
+        LOCAL_BIN_PATH - path to directory that contains ThreadBenchmark executable
+        LOCAL_TEST_DIRECTORY - directory under the python "local watcher": files that are copied / created here trigger events handled with ThreadBenchmark
+        
+Files copied / created in LOCAL_TEST_DIRECTORY have the following syntax:
+
+- First line should contain only this string: THREAD_BENCHMARK_TEST_FILE
+- Each of the following lines must contain two parameters for running ThreadBenchmark (resource size and thread count)
+
+Example of test files (see provided file in Tests directory):
+THREAD_BENCHMARK_TEST_FILE
+20000000 1
+20000000 2
+20000000 3
+
